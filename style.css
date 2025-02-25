@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "sub-bold";
+    src: url(fonts/Sublima-ExtraBold.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    background-color: aquamarine;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    font-family: "sub-bold";
+}
+
+a:hover {
+    color: white;
+    background-color: palevioletred;
+}
+
+.buttons {
+    padding: 15px;
+    background-color: pink;
+    margin-left: 20px;
+}
+h1 {
+    padding: 20px;
+    font-family: "sub-bold";
+}
+
+h2 {
+    padding: 30px;
+    font-family: "sub-bold";
+}
+
+#sem1 {
+    width: 100vw;
+    height: 45vh;
+}
+
+#sem2 {
+    width: 100vw;
+    height: 45vh;
+}
