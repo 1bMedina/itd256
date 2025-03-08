@@ -25,6 +25,8 @@ a:hover {
     padding: 15px;
     background-color: pink;
     margin-left: 20px;
+    display: inline-block;
+    
 }
 h1 {
     padding: 20px;
@@ -34,6 +36,7 @@ h1 {
 h2 {
     padding: 30px;
     font-family: "sub-bold";
+
 }
 
 #sem1 {
@@ -43,5 +46,11 @@ h2 {
 
 #sem2 {
     width: 100vw;
-    height: 45vh;
+    height: 50vh;
+}
+
+#button-wrapper{
+    display: flex;
+    flex-flow: wrap;
+    gap: 1rem;
 }
