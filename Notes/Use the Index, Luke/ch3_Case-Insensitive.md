@@ -1,0 +1,13 @@
+# Case-Insensitive 
+- `UPPER(LAST_NAME)` and `LAST_NAME` are two entirely different things to a database
+    - It's often that we fall into the trap thinking that the database understands the correlation like we do
+- The `UPPER` function is just a black box, the parameters to the function are not relevant because there is no general relationship between the functions parameters and results
+- To support the query we would need to create an index on `UPPER(LAST_NAME)` rather than `LAST_NAME`
+- An index whose definitions contain functions or expressions are called function-based indexes (aka FBI)
+- The function-based index applies the function first and puts the results into an index
+    - as the result the index stores all names in an all caps notation
+- The database traverses the B-tree and follows the leaf node chain
+- The *Orcale* database does not update table statistics when creating a new index (not sure if this is the same for postgresql)
+    - Updating the statistics will make the optimizer calculate a better option
+- The number of rows processed for each operation (cardinality estimate) is a particularly important figure that is shown in SQL and postgresql sever execution plans
+- 
