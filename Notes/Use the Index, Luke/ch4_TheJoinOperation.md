@@ -10,7 +10,7 @@
 - Nested loop join is the most fundamental join algorithm. 
     - The outer or driving query to fetch the results from one table and a second query for each row from the driving query to fetch the corresponding data from the other table. 
 - You can use 'nested selects' to implement the nested loops algorithm.
-- There is the "$N+1$ selects problem" which means that it executes $N+1$ selects in total if the driving query returns $N$ rows.
+- There is the " $N+1$ selects problem" which means that it executes $N+1$ selects in total if the driving query returns $N$ rows.
 - Indexing for nested loops join is therefore like indexing for select statements (given in chapter).
 - There are two dimensions of performance: response time and throughput
     - In computer networks these can be called *latency* and *bandwidth*.
