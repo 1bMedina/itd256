@@ -15,6 +15,9 @@
 
 <img src="Media/SeqScan.png" alt="Seq Scan pgAdmin">
 
+- Reflection:
+It used a sequential scan due to the fact the query is asking postgres to retrieve every row and every column from the table. This means it doesnt use the index at all, therefore it is a sequential scan. 
+
 ## Index Scan
 - Django ORM Code:
     ```
@@ -30,6 +33,9 @@
 
 <img src="Media/IndexScan.png" alt="Seq Scan pgAdmin">
 
+- Reflection:
+It used an index scan as the query is asking for all the info of the review with an ID 1. Since`review_id` has an explicit index (as it is a primary key), it uses this index to find then access the rest of the row. The fact this is only using the index to access the rest of the row is what makes it differ form an Index Only Scan.  
+
 ## Index Only Scan
 - Django ORM Code:
     ```
@@ -43,3 +49,6 @@
 - Screenshot From pgAdmin:
 
 <img src="Media/IndexOnlyScan.png" alt="Seq Scan pgAdmin">
+
+- Reflection:
+It uses an Index Only Scan as the query is asking how many stoves have an ID of 1, rather than the information within the stove with ID 1. This means it only need to use the index to fufil the task of the query. 
