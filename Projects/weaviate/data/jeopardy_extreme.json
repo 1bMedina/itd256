@@ -1,0 +1,279 @@
+{
+    "categories": [
+      {
+        "name": "History",
+        "questions": [
+          {
+            "question": "This ancient Mesopotamian code, one of the earliest known legal systems, prescribed 'an eye for an eye'.",
+            "answer": "The Code of Hammurabi",
+            "value": 200
+          },
+          {
+            "question": "This 11th-century Norman leader conquered England in 1066.",
+            "answer": "William the Conqueror",
+            "value": 400
+          },
+          {
+            "question": "This 14th-century pandemic wiped out 1/3 of Europe's population.",
+            "answer": "The Black Death (Bubonic Plague)",
+            "value": 600
+          },
+          {
+            "question": "This 18th-century queen of France famously said, 'Let them eat cake' (though likely apocryphal).",
+            "answer": "Marie Antoinette",
+            "value": 800
+          },
+          {
+            "question": "This 1969 event saw humans land on the Moon for the first time.",
+            "answer": "Apollo 11 Moon Landing",
+            "value": 1000
+          },
+          {
+            "question": "This 19th-century inventor of the telephone famously said, 'Mr. Watson, come here.'",
+            "answer": "Alexander Graham Bell",
+            "value": 1200
+          },
+          {
+            "question": "This ancient wonder, located in Egypt, is the only one still standing today.",
+            "answer": "The Great Pyramid of Giza",
+            "value": 1400
+          },
+          {
+            "question": "This 16th-century English monarch had six wives and founded the Church of England.",
+            "answer": "Henry VIII",
+            "value": 1600
+          },
+          {
+            "question": "This 1912 ship, deemed 'unsinkable', sank on its maiden voyage.",
+            "answer": "The Titanic",
+            "value": 1800
+          },
+          {
+            "question": "This 1989 event saw the fall of a symbolic divide between East and West Germany.",
+            "answer": "The Fall of the Berlin Wall",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "name": "Science",
+        "questions": [
+          {
+            "question": "This force keeps planets in orbit around the Sun.",
+            "answer": "Gravity",
+            "value": 200
+          },
+          {
+            "question": "This gas, exhaled by humans, is absorbed by plants during photosynthesis.",
+            "answer": "Carbon Dioxide (CO₂)",
+            "value": 400
+          },
+          {
+            "question": "This particle, discovered in 2012, is nicknamed the 'God Particle'.",
+            "answer": "Higgs Boson",
+            "value": 600
+          },
+          {
+            "question": "This phenomenon causes the sky to appear blue during the day.",
+            "answer": "Rayleigh Scattering",
+            "value": 800
+          },
+          {
+            "question": "This organelle is known as the 'powerhouse of the cell'.",
+            "answer": "Mitochondria",
+            "value": 1000
+          },
+          {
+            "question": "This chemical element has the atomic number 79 and symbol 'Au'.",
+            "answer": "Gold",
+            "value": 1200
+          },
+          {
+            "question": "This neurological condition causes temporary memory loss, often due to head trauma.",
+            "answer": "Amnesia",
+            "value": 1400
+          },
+          {
+            "question": "This 17th-century scientist formulated the laws of motion and universal gravitation.",
+            "answer": "Isaac Newton",
+            "value": 1600
+          },
+          {
+            "question": "This medical imaging technique uses strong magnetic fields and radio waves.",
+            "answer": "MRI (Magnetic Resonance Imaging)",
+            "value": 1800
+          },
+          {
+            "question": "This theoretical framework describes gravity as the curvature of spacetime.",
+            "answer": "Einstein's Theory of General Relativity",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "name": "Pop Culture",
+        "questions": [
+          {
+            "question": "This 1997 film, the highest-grossing of its time, features the line, 'I'm the king of the world!'",
+            "answer": "Titanic",
+            "value": 200
+          },
+          {
+            "question": "This singer's alter ego is 'Sasha Fierce'.",
+            "answer": "Beyoncé",
+            "value": 400
+          },
+          {
+            "question": "This 2012 Korean viral hit became the first YouTube video to hit 1 billion views.",
+            "answer": "Gangnam Style by PSY",
+            "value": 600
+          },
+          {
+            "question": "This TV show's characters include Sheldon Cooper and Penny.",
+            "answer": "The Big Bang Theory",
+            "value": 800
+          },
+          {
+            "question": "This 1984 film starred Arnold Schwarzenegger as a cyborg assassin.",
+            "answer": "The Terminator",
+            "value": 1000
+          },
+          {
+            "question": "This rapper's real name is Marshall Mathers.",
+            "answer": "Eminem",
+            "value": 1200
+          },
+          {
+            "question": "This streaming service debuted 'Stranger Things' in 2016.",
+            "answer": "Netflix",
+            "value": 1400
+          },
+          {
+            "question": "This 2009 film about blue aliens became the highest-grossing movie of all time.",
+            "answer": "Avatar",
+            "value": 1600
+          },
+          {
+            "question": "This artist painted the 'Mona Lisa' and 'The Last Supper'.",
+            "answer": "Leonardo da Vinci",
+            "value": 1800
+          },
+          {
+            "question": "This 1969 music festival became synonymous with the counterculture movement.",
+            "answer": "Woodstock",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "name": "Technology",
+        "questions": [
+          {
+            "question": "This company created the Windows operating system.",
+            "answer": "Microsoft",
+            "value": 200
+          },
+          {
+            "question": "This search engine's original name was 'Backrub'.",
+            "answer": "Google",
+            "value": 400
+          },
+          {
+            "question": "This programming language was created by Guido van Rossum and named after a comedy troupe.",
+            "answer": "Python",
+            "value": 600
+          },
+          {
+            "question": "This 1997 computer defeated chess grandmaster Garry Kasparov.",
+            "answer": "IBM Deep Blue",
+            "value": 800
+          },
+          {
+            "question": "This social media platform limits posts to 280 characters.",
+            "answer": "Twitter (now X)",
+            "value": 1000
+          },
+          {
+            "question": "This cryptocurrency, created in 2009, was the first decentralized digital currency.",
+            "answer": "Bitcoin",
+            "value": 1200
+          },
+          {
+            "question": "This company's CEO is Tim Cook.",
+            "answer": "Apple",
+            "value": 1400
+          },
+          {
+            "question": "This protocol is the foundation of the modern internet (hint: HTTP uses it).",
+            "answer": "TCP/IP",
+            "value": 1600
+          },
+          {
+            "question": "This AI chatbot, released in 2022, was developed by OpenAI.",
+            "answer": "ChatGPT",
+            "value": 1800
+          },
+          {
+            "question": "This 1969 event marked the first connection between two computers over ARPANET, the precursor to the internet.",
+            "answer": "The first ARPANET link",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "name": "Literature",
+        "questions": [
+          {
+            "question": "This Shakespeare tragedy features the line, 'To be or not to be.'",
+            "answer": "Hamlet",
+            "value": 200
+          },
+          {
+            "question": "This Oscar Wilde novel tells the story of a man whose portrait ages while he remains youthful.",
+            "answer": "The Picture of Dorian Gray",
+            "value": 400
+          },
+          {
+            "question": "This dystopian novel features a totalitarian regime and 'Newspeak'.",
+            "answer": "1984 by George Orwell",
+            "value": 600
+          },
+          {
+            "question": "This J.K. Rowling series follows a young wizard named Harry Potter.",
+            "answer": "The Harry Potter Series",
+            "value": 800
+          },
+          {
+            "question": "This F. Scott Fitzgerald novel is set in the Roaring Twenties and features Jay Gatsby.",
+            "answer": "The Great Gatsby",
+            "value": 1000
+          },
+          {
+            "question": "This Herman Melville novel follows the vengeful Captain Ahab and a white whale.",
+            "answer": "Moby-Dick",
+            "value": 1200
+          },
+          {
+            "question": "This Jane Austen novel begins with the line, 'It is a truth universally acknowledged...'",
+            "answer": "Pride and Prejudice",
+            "value": 1400
+          },
+          {
+            "question": "This Gabriel García Márquez novel popularized magical realism.",
+            "answer": "One Hundred Years of Solitude",
+            "value": 1600
+          },
+          {
+            "question": "This J.R.R. Tolkien trilogy features Frodo Baggins and the One Ring.",
+            "answer": "The Lord of the Rings",
+            "value": 1800
+          },
+          {
+            "question": "This Leo Tolstoy epic novel chronicles the lives of five families during the Napoleonic Wars.",
+            "answer": "War and Peace",
+            "value": 2000
+          }
+        ]
+      }
+    ]
+  }

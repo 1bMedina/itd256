@@ -1,0 +1,154 @@
+{
+    "categories": [
+      {
+        "name": "History",
+        "questions": [
+          {
+            "question": "This ancient civilization built the Machu Picchu citadel.",
+            "answer": "The Incas",
+            "value": 200
+          },
+          {
+            "question": "This 19th-century conflict saw the North and South U.S. states fight over slavery and states' rights.",
+            "answer": "The Civil War",
+            "value": 400
+          },
+          {
+            "question": "This French military leader was defeated at the Battle of Waterloo in 1815.",
+            "answer": "Napoleon Bonaparte",
+            "value": 600
+          },
+          {
+            "question": "This document, signed in 1215, limited the power of the English monarchy.",
+            "answer": "The Magna Carta",
+            "value": 800
+          },
+          {
+            "question": "This wall, built in 1961, divided East and West Berlin until 1989.",
+            "answer": "The Berlin Wall",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "name": "Science",
+        "questions": [
+          {
+            "question": "This is the smallest unit of matter that retains chemical properties.",
+            "answer": "Atom",
+            "value": 200
+          },
+          {
+            "question": "This planet has the most moons in our solar system (over 90 confirmed).",
+            "answer": "Jupiter",
+            "value": 400
+          },
+          {
+            "question": "This physicist formulated the theory of relativity (E=mc²).",
+            "answer": "Albert Einstein",
+            "value": 600
+          },
+          {
+            "question": "This process, performed by plants, converts sunlight into energy.",
+            "answer": "Photosynthesis",
+            "value": 800
+          },
+          {
+            "question": "This genetic molecule carries instructions for development and function.",
+            "answer": "DNA",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "name": "Pop Culture",
+        "questions": [
+          {
+            "question": "This 1985 film featured Marty McFly and a time-traveling DeLorean.",
+            "answer": "Back to the Future",
+            "value": 200
+          },
+          {
+            "question": "This singer’s albums include 'Lemonade' and 'Renaissance'.",
+            "answer": "Beyoncé",
+            "value": 400
+          },
+          {
+            "question": "This TV show, set in a Pennsylvania paper company, starred Steve Carell.",
+            "answer": "The Office",
+            "value": 600
+          },
+          {
+            "question": "This social media app popularized short-form video with dancing and challenges.",
+            "answer": "TikTok",
+            "value": 800
+          },
+          {
+            "question": "This Marvel superhero is known as the 'God of Thunder'.",
+            "answer": "Thor",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "name": "Technology",
+        "questions": [
+          {
+            "question": "This company created the iPhone and MacBook.",
+            "answer": "Apple",
+            "value": 200
+          },
+          {
+            "question": "This programming language, named after a comedy show, is popular for data science.",
+            "answer": "Python",
+            "value": 400
+          },
+          {
+            "question": "This tech CEO bought Twitter (now X) in 2022.",
+            "answer": "Elon Musk",
+            "value": 600
+          },
+          {
+            "question": "This protocol secures web connections (HTTPS uses it).",
+            "answer": "SSL/TLS",
+            "value": 800
+          },
+          {
+            "question": "This quantum computing term refers to bits that can be 0, 1, or both simultaneously.",
+            "answer": "Qubit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "name": "Literature",
+        "questions": [
+          {
+            "question": "This Shakespeare play features the characters Romeo and Juliet.",
+            "answer": "Romeo and Juliet",
+            "value": 200
+          },
+          {
+            "question": "This novel by Oscar Wilde follows a man whose portrait ages while he stays young.",
+            "answer": "The Picture of Dorian Gray",
+            "value": 400
+          },
+          {
+            "question": "This dystopian novel features 'Big Brother' and was written by George Orwell.",
+            "answer": "1984",
+            "value": 600
+          },
+          {
+            "question": "This author wrote 'To Kill a Mockingbird'.",
+            "answer": "Harper Lee",
+            "value": 800
+          },
+          {
+            "question": "This Russian novelist wrote 'War and Peace' and 'Anna Karenina'.",
+            "answer": "Leo Tolstoy",
+            "value": 1000
+          }
+        ]
+      }
+    ]
+  }

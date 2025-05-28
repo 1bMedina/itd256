@@ -11,7 +11,7 @@ client = weaviate.connect_to_weaviate_cloud(
     auth_credentials=Auth.api_key(weaviate_api_key),             
 )
 
-with open("data/jeopardy.json", "r") as dataj:
+with open("data/jeopardy_extreme.json", "r") as dataj:
     data = json.load(dataj)
 
 questions = client.collections.get("Question")

@@ -14,7 +14,7 @@ client = weaviate.connect_to_weaviate_cloud(
 questions = client.collections.get("Question")
 
 response = questions.query.near_text(
-    query="science",
+    query="Dorian Gray",
     limit=2,
 )
 

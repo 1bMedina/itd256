@@ -13,7 +13,7 @@ client = weaviate.connect_to_weaviate_cloud(
 )
 
 questions = client.collections.create(
-    name="Question",
+    name="Testing",
     vectorizer_config=Configure.Vectorizer.text2vec_weaviate(),
     generative_config=Configure.Generative.cohere()             
 )
