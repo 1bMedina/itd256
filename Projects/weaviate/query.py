@@ -1,4 +1,3 @@
-
 import weaviate
 from weaviate.classes.init import Auth
 import os, json
@@ -12,7 +11,14 @@ client = weaviate.connect_to_weaviate_cloud(
     auth_credentials=Auth.api_key(weaviate_api_key),             
 )
 
-collection_config = client.collections.get("Question").config.get()
-print(f"Vectorizer: {collection_config.vectorizer}")
+questions = client.collections.get("Question")
 
-client.close()
+response = questions.query.near_text(
+    query="science",
+    limit=2,
+)
+
+for obj in response.objects:
+    print(json.dumps(obj.properties, indent=2))
+
+client.close() 

@@ -1,0 +1,64 @@
+{
+    "categories": [
+      {
+        "name": "History",
+        "questions": [
+          {
+            "question": "This ancient civilization built the pyramids.",
+            "answer": "Egyptians",
+            "value": 200
+          },
+          {
+            "question": "This war lasted from 1914 to 1918.",
+            "answer": "World War I",
+            "value": 400
+          },
+          {
+            "question": "He was the first president of the United States.",
+            "answer": "George Washington",
+            "value": 600
+          }
+        ]
+      },
+      {
+        "name": "Science",
+        "questions": [
+          {
+            "question": "This gas makes up about 78% of Earth's atmosphere.",
+            "answer": "Nitrogen",
+            "value": 200
+          },
+          {
+            "question": "This is the chemical symbol for gold.",
+            "answer": "Au",
+            "value": 400
+          },
+          {
+            "question": "This planet is known as the 'Red Planet'.",
+            "answer": "Mars",
+            "value": 600
+          }
+        ]
+      },
+      {
+        "name": "Pop Culture",
+        "questions": [
+          {
+            "question": "This singer is known as the 'Queen of Pop'.",
+            "answer": "Madonna",
+            "value": 200
+          },
+          {
+            "question": "This movie features the characters Luke Skywalker and Darth Vader.",
+            "answer": "Star Wars",
+            "value": 400
+          },
+          {
+            "question": "This social media platform is known for its 280-character limit.",
+            "answer": "Twitter (now X)",
+            "value": 600
+          }
+        ]
+      }
+    ]
+  }

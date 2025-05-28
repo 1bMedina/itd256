@@ -1,7 +1,7 @@
-
 import weaviate
 from weaviate.classes.init import Auth
-import os, json
+from weaviate.classes.config import Configure
+import os
 
 
 weaviate_url = os.environ["WEAVIATE_URL"]
@@ -12,7 +12,10 @@ client = weaviate.connect_to_weaviate_cloud(
     auth_credentials=Auth.api_key(weaviate_api_key),             
 )
 
-collection_config = client.collections.get("Question").config.get()
-print(f"Vectorizer: {collection_config.vectorizer}")
+questions = client.collections.create(
+    name="Question",
+    vectorizer_config=Configure.Vectorizer.text2vec_weaviate(),
+    generative_config=Configure.Generative.cohere()             
+)
 
 client.close()
