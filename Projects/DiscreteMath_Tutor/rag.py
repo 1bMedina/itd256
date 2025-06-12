@@ -13,17 +13,19 @@ client = weaviate.connect_to_weaviate_cloud(
     headers={"X-Cohere-Api-Key": cohere_api_key},           
 )
 
-questions = client.collections.get("Question")
+discreteMath = client.collections.get("discreteMath")
 
-queryUser = input("Enter a topic: ")
-questionUser = input("What is your question? ")
-
-response = questions.generate.near_text(
-    query="Dorian Gray",
-    limit=2,
-    grouped_task="Explain in a way that paints a picture"
-)
-
-print(response.generated)  
+while True:
+    queryUser = input("Enter a topic: ")
+    if queryUser == "exit":
+        break
+    
+    questionUser = input("What is your question? ")
+    response = discreteMath.generate.near_text(
+        query=queryUser,
+        limit=2,
+        grouped_task=questionUser 
+    )
+    print(response.generated)
 
 client.close()

@@ -1,0 +1,212 @@
+{
+    "topics": [
+      {
+        "category": "0.1 What is Discrete Mathematics?",
+        "terms": [
+          {
+            "term": "Discrete vs. Continuous",
+            "definition": "Discrete mathematics deals with distinct, separable values (e.g., integers), while continuous mathematics deals with smooth, infinite values (e.g., real numbers).",
+            "formula": null,
+            "practice_problem": "Give 3 examples of discrete and continuous systems."
+          },
+          {
+            "term": "Applications",
+            "definition": "Used in computer science (algorithms), cryptography, network design, and combinatorics.",
+            "formula": null,
+            "practice_problem": "Name a discrete structure used in social network analysis."
+          }
+        ]
+      },
+      {
+        "category": "0.2 Discrete Structures",
+        "terms": [
+          {
+            "term": "Set",
+            "definition": "Collection of distinct objects (e.g., {1, 2, 3}).",
+            "formula": null,
+            "practice_problem": "Is {∅} an empty set? Explain."
+          },
+          {
+            "term": "Graph",
+            "definition": "Pair (V, E) where V is a set of vertices and E is a set of edges.",
+            "formula": "G = (V, E)",
+            "practice_problem": "Draw a graph with V = {A, B, C}, E = {(A, B), (B, C)}."
+          }
+        ]
+      },
+      {
+        "category": "1.1 Mathematical Statements",
+        "terms": [
+          {
+            "term": "Proposition",
+            "definition": "A statement that is either true or false (e.g., '3 is odd').",
+            "formula": null,
+            "practice_problem": "Is 'This sentence is false' a proposition? Why?"
+          },
+          {
+            "term": "Predicate",
+            "definition": "A statement whose truth depends on variables (e.g., 'x > 5').",
+            "formula": null,
+            "practice_problem": "Convert 'All dogs bark' into a predicate."
+          }
+        ]
+      },
+      {
+        "category": "1.2 Implications",
+        "terms": [
+          {
+            "term": "Converse",
+            "definition": "The converse of P → Q is Q → P.",
+            "formula": null,
+            "practice_problem": "Find the converse of 'If it rains, the ground is wet.'"
+          },
+          {
+            "term": "Contrapositive",
+            "definition": "The contrapositive of P → Q is ¬Q → ¬P.",
+            "formula": null,
+            "practice_problem": "Write the contrapositive of 'If n is even, then n² is even.'"
+          }
+        ]
+      },
+      {
+        "category": "1.3 Rules of Logic",
+        "terms": [
+          {
+            "term": "De Morgan’s Laws",
+            "definition": "¬(P ∧ Q) ≡ ¬P ∨ ¬Q and ¬(P ∨ Q) ≡ ¬P ∧ ¬Q.",
+            "formula": null,
+            "practice_problem": "Apply De Morgan’s Law to ¬(x > 0 ∧ y < 0)."
+          },
+          {
+            "term": "Distributive Law",
+            "definition": "P ∨ (Q ∧ R) ≡ (P ∨ Q) ∧ (P ∨ R).",
+            "formula": null,
+            "practice_problem": "Simplify (A ∧ B) ∨ (A ∧ C) using distributive law."
+          }
+        ]
+      },
+      {
+        "category": "1.4 Proofs",
+        "terms": [
+          {
+            "term": "Direct Proof",
+            "definition": "Assume P is true and show Q must follow.",
+            "formula": null,
+            "practice_problem": "Prove: If n is odd, then n² is odd."
+          },
+          {
+            "term": "Proof by Contradiction",
+            "definition": "Assume the statement is false and derive a contradiction.",
+            "formula": null,
+            "practice_problem": "Prove √2 is irrational by contradiction."
+          }
+        ]
+      },
+      {
+        "category": "2.1 Problems and Definitions",
+        "terms": [
+          {
+            "term": "Degree of a Vertex",
+            "definition": "Number of edges incident to a vertex.",
+            "formula": "deg(v)",
+            "practice_problem": "Find the degree of each vertex in a triangle graph."
+          },
+          {
+            "term": "Complete Graph (Kₙ)",
+            "definition": "Graph where every pair of vertices is connected by an edge.",
+            "formula": "|E| = n(n-1)/2",
+            "practice_problem": "How many edges are in K₅?"
+          }
+        ]
+      },
+      {
+        "category": "2.2 Trees",
+        "terms": [
+          {
+            "term": "Tree",
+            "definition": "Connected acyclic graph.",
+            "formula": "|E| = |V| - 1",
+            "practice_problem": "Draw all non-isomorphic trees with 4 vertices."
+          },
+          {
+            "term": "Leaf",
+            "definition": "Vertex with degree 1 in a tree.",
+            "formula": null,
+            "practice_problem": "How many leaves does a full binary tree with 31 vertices have?"
+          }
+        ]
+      },
+      {
+        "category": "2.3 Planar Graphs",
+        "terms": [
+          {
+            "term": "Planar Graph",
+            "definition": "Graph that can be drawn on a plane without edge crossings.",
+            "formula": "Euler’s Formula: |V| - |E| + |F| = 2",
+            "practice_problem": "Is K₄ planar? Justify."
+          }
+        ]
+      },
+      {
+        "category": "2.5 Coloring",
+        "terms": [
+          {
+            "term": "Bipartite Graph",
+            "definition": "Graph whose vertices can be divided into two disjoint sets U and V such that every edge connects a vertex in U to one in V.",
+            "formula": null,
+            "practice_problem": "Prove that a tree is bipartite."
+          }
+        ]
+      },
+      {
+        "category": "3.4 Combinations and Permutations",
+        "terms": [
+          {
+            "term": "Permutation (Order Matters)",
+            "definition": "Arrangement of items where order matters.",
+            "formula": "P(n, k) = n!/(n-k)!",
+            "practice_problem": "How many ways can 3 students out of 10 win 1st, 2nd, 3rd prizes?"
+          },
+          {
+            "term": "Combination (Order Doesn’t Matter)",
+            "definition": "Selection of items where order does not matter.",
+            "formula": "C(n, k) = n!/(k!(n-k)!)",
+            "practice_problem": "How many 5-card hands can be dealt from a 52-card deck?"
+          }
+        ]
+      },
+      {
+        "category": "4.5 Proof by Induction",
+        "terms": [
+          {
+            "term": "Base Case",
+            "definition": "Prove the statement holds for the initial value (often n=0 or n=1).",
+            "formula": null,
+            "practice_problem": "Prove by induction: 1 + 3 + 5 + ... + (2n-1) = n²."
+          }
+        ]
+      },
+      {
+        "category": "5.1 Sets",
+        "terms": [
+          {
+            "term": "Cartesian Product",
+            "definition": "Set of all ordered pairs (a, b) where a ∈ A and b ∈ B.",
+            "formula": "A × B = {(a, b) | a ∈ A, b ∈ B}",
+            "practice_problem": "Find {1, 2} × {x, y}."
+          }
+        ]
+      },
+      {
+        "category": "5.2 Functions",
+        "terms": [
+          {
+            "term": "Bijection",
+            "definition": "Function that is both injective (one-to-one) and surjective (onto).",
+            "formula": null,
+            "practice_problem": "Show that f(x) = 2x + 1 is a bijection from ℝ to ℝ."
+          }
+        ]
+      }
+    ]
+  }

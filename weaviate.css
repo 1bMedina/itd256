@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --off-white: #FAF9F6;
+    --off-white-dark: #F0EDE5; 
+    --dark-sage: #5F7161;
+    --light-sage: #DDE5D9; 
+    --dark-grey: #3A3A3A;
+    --text: #2D2D2D;
+    --accent: #6D8B74;
+  }
+
+body {
+    background-color: var(--dark-sage);
+    display: flex;
+    flex-direction: column;
+}
+#body-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 90vw;
+    height: auto;
+    margin-left: 5%;
+    background-color: var(--off-white-dark);
+    border-radius: 25px;
+    color: var(--dark-grey);
+    padding-bottom: 50px;
+
+}
+#header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+#intro {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+#main-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+
+#main-content img {
+    width: 85vw;
+    border-radius: 25px;
+}
+p {
+    text-align: center;
+}
+code {
+    background: var(--dark-grey);
+    color: var(--light-sage);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
+    font-size: 0.8em;

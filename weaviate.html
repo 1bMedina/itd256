@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weaviate Blog</title>
+    <link rel="stylesheet" href="weaviate.css">
+</head>
+<body>
+    <div id="body-content-wrapper">
+        <div id="header">
+            <h1>Weaviate Blog!</h1>
+            <p>Welcome to my little blog following my experience using Weaviate - a vector database - and a RAG model (Retrieval-Augmented Generation Model) to create a fun little game. Later, after studying vector databases more and testing the RAG models compatibility with data, I created my own Discrete Math Tutor based off my textbook.</p>
+        </div>
+        <div id="content-wrapper">
+            <div id="intro">
+                <h2>Essential Questions to Understanding the Project!</h2>
+                <p>When starting the project I had to understand some essential questions to make this project work. I had to understand what a vector database is and why I would use it over a relational database. We went over this concept in class, but I thought I would delve further into the concepts.</p>
+                <p>What I found out was that a vector database is similar to a relational database in some aspects (don't hate me for saying that). They both store data, but in different ways. Relational database store data in rows and columns with a fixed schema, while vector databases store data schema-flexible using JSON like files.</p>
+                <p>Vector databases also store data with their numerical representation, and this is where it gets interesting. Because of this you can run something called a semantic search. I did a little project on vector embeddings (which are the numerical representations) using <a href="https://github.com/1bMedina/ite140/blob/main/ITE140/notebooks/word2vec.ipynb">Word2Vec</a>. Weaviate does something similar as Word2Vec using their own Text2Vec (you can read more about it <a href="https://weaviate.io/developers/weaviate/model-providers/transformers/embeddings">here</a>).</p>
+                <p>The way data is stored allows the RAG models to work so well because it isn't looking for the exact word you said, it's looking for a numerical representation similar to what you queried.</p>
+                <h2>Why do vector databases matter?</h2>
+                <p>Vector databases matter as they allow us to analyze data in a variety of ways that aren't available in relational databases. You could store data in a relational database and run code to vectorize the data, or you could store it in a vector database which vectorizes the data for you. Vector database are also just extremely flexible, in my opinion I think vector databases are really easy to use. Earlier in the year we worked with vector embeddings, and we learned the many ways they can be used to analyze data! heres that <a href="https://github.com/1bMedina/ite140/tree/main/ITE140/notebooks/2050">project</a>.</p>
+            </div>
+            <div id="main-content">
+                <h2>Steps I took to create this project!</h2>
+                <h3>Step 1:</h3>
+                <p>After researching I went to the Weaviate website and found whatever version is free. This brought me to the cloud clusters. I was given a sandbox that contained a REST Endpoint (a specific path in a REST API that a client can use to interact with a resource) and an Admin API Key. With these I was able to create a basic python file, import Weaviate and its auth, then import the REST Endpoint and Admin Key (I had stored them as environment variables), to then connect to my sandbox through the cloud! It was an easy process, all I did was connect and then ran a line of code that would print true or false based on if I had connected (<code>print(client.is_ready())</code>)! One thing I learned is that APS (Arlington Public Schools) blocks EVERYTHING! I was unable to connect on my school Wifi, and had to use my hotspot to connect to it!</p>
+                <h3>Step 2:</h3>
+                <p>I had to create something called a collection, this would store my data and it would be the thing I ran my queries through. It was like a table! It was pretty simple to set up, I ran the same connection code as above and just added a new block that defined a variable and created a collection within it. It then uses this line -<code> vectorizer_config=Configure.Vectorizer.text2vec_weaviate()</code> - to configure how text data will be converted into vector embeddings using Weaviates built in text2vec module. This line - <code>generative_config=Configure.Generative.cohere()</code> - sets up generative AI capabilities using Cohere's generative AI model which will be integrated later.</p>
+                <h3>Step 3:</h3>
+                <p>Data time!! Because this was just for a project, I used an AI (DeepSeek) to create me a random jeopardy data set. Then I connected to my sandbox, called my collection and then ran a batch import. This parses the JSON file into a Python dictionary. Once it reads and parses the file, it accesses the Weaviate collection (created earlier) using this line <code>questions = client.collections.get("Question")</code>. A batch import, is efficient for large datasets, and imports with a batch size of 200. Then it loops through each category on the JSON file. Then for each question it adds it to Weaviate. The end of the batch import stops it if more than 10 errors occur.</p>
+                <h3>Step 4:</h3>
+                <p>Query time!! It's time to run our first query! We print our first queries using this <a href="https://github.com/1bMedina/itd256/blob/main/Projects/weaviate/query.py">code</a>. The code connects to the collection which we just loaded data into. Then we set a variable which preforms a semantic search to find objects similar to the word science (for example). Essentially, the code coverts the query (which in this case is science) to a vector using the collections vectorizer, then compares this against other vectors in the collection, then returns the top 2 results.</p>
+                <h3>Step 4:</h3>
+                <p>Time for the RAG model! Here were using Cohere. We use Retrieval Augmented Generation (RAG), aka generative search, to combine the power of generative AI models (such as Large Language Models (LLMs)) with databases! RAG works by prompting a large language model with a combo of user query and data retrieved from the database. Here is a helpful diagram provided by Weaviates quickstart tutorials:</p>
+                <img src="Projects/weaviate/media/diagram.png" alt="RAG diagram">
+                <p>It uses the same connection code that we originally mentioned from earlier that we have been using in every file, except now we are connecting to Coheres API using one of their trial keys. Then we connect to the collection, which has data loaded into it from earlier. Now, remember this little line of code - <code>generative_config=Configure.Generative.cohere()</code> - from earlier? This line of code allows for the collection to use generative AI models such as cohere. Then we follow the same query structure as query.py except we give the LLM a task. Then we print it to get a fun 'tweet' containing emojis.</p>
+                <h3>Step 5: Done!</h3>
+                <p>We've created a vector database that utilizes a RAG model!! If you want a more in depth look at the code, go to my <a href="https://github.com/1bMedina/itd256/blob/main/Projects/weaviate/WeaviatePresentation.md">markdown file</a>!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
