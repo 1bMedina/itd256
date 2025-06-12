@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arlington 2050 Blog</title>
+    <link rel="stylesheet" href="2050.css">
+</head>
+<body>
+    <div id="body-content-wrapper">
+        <div id="header">
+            <h1>Arlington 2050 Blog!</h1>
+            <p>Welcome to my little blog following my experience using vector embeddings to analyze data for our community! This was such a fun project for me as I love working in projects that will impact my community.</p>
+        </div>
+        <div id="content-wrapper">
+            <div id="intro">
+                <h2>What is Arlington 2050?</h2>
+                <p>The Arlington 2050 project is a yearlong initiative that strived to get community feedback on what Arlington should look like in 2050 and the challenges we must address to get there. I worked specifically with the 'Postcard test tracker dataset'. This specific dataset had data collected from many locations. These ranged from local libraries to community events. Our data was collected strictly on postcards at said locations, whether that be in person or dropped in a box.</p>
+                <h2>Why did we analyze data for them? What did it do?</h2>
+                <p>I believe we analyzed data for them as it was a way to help our community but also a way to work with real world data. We had worked with random data before, but never analyzed and produced results for real world data. We produced many things, some of our most prominent had to be word clouds and histogram graphs. These were the most insightful and also easiest to understand. We also did semantic search using Word2Vec which helped us understand what people correlated certain things with (ex: "missing middle" and "property").</p>
+            </div>
+            <div id="main-content">
+                <h2>Aspects of the Project!</h2>
+                <h3>Cleaning Data:</h3>
+                <p>I used pandas for this process.</p>
+                <p>First, I took into account the fact we had hundreds of entries from multiple different locations. Due to the fact I had entries from multiple different locations in the county I had a little extra work when it came to cleaning the data. I needed to make sure that each location had its own dataframe, this would make getting specifics on certain locations easier. I achieved this by creating a new dataframe for each location.</p>
+                <h3>Creating Word Clouds:</h3>
+                <p>I used Spacy, Word Cloud, and Matplotlib for this process.</p>
+                <p>Some things we noticed in our word clouds was that every location seemed to have different common words. While some would be similar, they would never be perfectly the same. Some of the most common words ranged from "Arlington", "Community", "Housing" to "Trees", "Green", and "Safe". All word clouds had their similarities, but their differences stuck out more. It was super interesting how one part of arlington focused on community while the other focused on trees and green!</p>
+                <h3>Sentiment Analysis</h3>
+                <p>I used Spacy and SpacyTextBlob for this process.</p>
+                <p>I was able to see that while you'd assume that most entries would be positive, not all are. With one set of data having a polarity of 0.2850, it shows us that it is fairly positive with some negativity (it ranges from -1 to 1). Though with subjectivity we're able to see that the entries are partially based on opinion. Subjectivity tells us whether something is opinion or not, ranging from 0 to 1 (objective to subjective).</p>
+                <h3>Semantic Search:</h3>
+                <p>I used Spacy and Word2Vec</p>
+                <p>For this, I took two user-input phrases and uses spaCy's language model to measure their similarity to any query I predetermined, then I printed the three most similar phrases from a dataset. It leverages NLP-based semantic comparison to rank and retrieve relevant text entries.</p>
+                <h3>Step 5: Done!</h3>
+                <p>We've analyzed data in multiple ways! If you want a more in depth look at the code, go to my <a href="https://github.com/1bMedina/ite140/blob/main/ITE140/notebooks/2050/Arlington%202050%20Summary.ipynb">markdown file</a>!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
